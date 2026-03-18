@@ -21,7 +21,7 @@ public class REcommandationsApplication {
         return args -> {
             repository.deleteAll();
 
-            RestClient pythonClient = restClientBuilder.baseUrl("http://127.0.0.1:8000").build();
+            RestClient pythonClient = restClientBuilder.baseUrl("https://recommandations-system-1.onrender.com").build();
 
             try {
                 List<Product> catalogComplet = pythonClient.get()

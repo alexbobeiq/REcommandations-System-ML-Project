@@ -14,7 +14,7 @@ public class RecommandationsService {
 
     public RecommandationsService(RestClient.Builder restClientBuilder, ProductRepository productRepository) {
         this.restClient = restClientBuilder
-                .baseUrl("http://127.0.0.1:8000")
+                .baseUrl("https://recommandations-system-1.onrender.com")
                 .build();
         this.productRepository = productRepository;
     }
