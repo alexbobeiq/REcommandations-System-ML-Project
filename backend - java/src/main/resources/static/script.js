@@ -14,7 +14,7 @@ async function loadRecommandations() {
     loading.classList.remove('hidden');
 
     try {
-        const url = `http://localhost:8080/store/recommandations/${customerId}`;
+        const url = `https://recommandations-system-1.onrender.com/store/recommandations/${customerId}`;
         const response = await fetch(url);
 
         if (!response.ok) throw new Error("Server not responding");
